@@ -4,7 +4,7 @@ interface Profile {
     email: string;
 }
 
-const updateProfile = <T extends object, U extends Partial<T>>(currentProfile: T, updatePart: U) => {
+const updateProfile = <T extends object, U extends Partial<T>>(currentProfile: T, updatePart: U): T => {
 
 
     const keysOfUpdatedInfo: string[] = Object.keys(updatePart);
