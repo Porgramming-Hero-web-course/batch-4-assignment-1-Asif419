@@ -1,8 +1,7 @@
-type NA = number[];
-type N = number;
+type NumberArray = number[];
 
 
-const sumArray = (array: NA): N => {
+const sumArray = (array: NumberArray): number => {
     let sum: number = 0;
 
     for (let i: number = 0; i < array.length; i++) {
