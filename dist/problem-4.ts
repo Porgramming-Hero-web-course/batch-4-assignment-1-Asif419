@@ -22,12 +22,12 @@ const isFloat = (num: number): number => {
 
 // checking point for given object (is it circle or not)
 const isCircle = (obj: CircleOrRectangle): obj is Circle => {
-    return (obj as Circle).shape == 'circle'
+    return (obj as Circle).shape == 'circle';
 }
 
 // checking point for given object (is it rectangle or not)
 const isRectangle = (obj: CircleOrRectangle): obj is Circle => {
-    return (obj as Circle).shape == 'rectangle'
+    return (obj as Circle).shape == 'rectangle';
 }
 
 const calculateShapeArea = (obj: CircleOrRectangle): number => {
